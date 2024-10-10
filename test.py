@@ -13,8 +13,13 @@ response = requests.get(
 )
 
 data = json.loads(response.text)
+
+
+#use format below to get data  needed
+print(data["data"][0]["attributes"]["amount"]["value"])
+
 # add indentation
-#json_object = json.dumps(data)#, indent=10)
+json_object = json.dumps(data, indent=1)
 
 with open("record.json", "w") as outfile:
-    json.dump(data, outfile)
+    json.dump(json_object, outfile)

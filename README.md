@@ -9,6 +9,11 @@ Git:
 git add --all
 git commit -m ''
 
+Python:
+Run program in VS by typing "python program.py"
+Go to https://www.freeformatter.com/json-escape.html to read json file (indent 2 works well from UP response)
+
+
 Raspberry pi:
 sudo python
 import RPi.GPIO as GPIO
